@@ -7,45 +7,43 @@
   <title>Frontend Mentor | Interactive rating component</title>
   <link rel="stylesheet" href="./src/output.css">
 </head>
-<body class="font-Overpass bg-Very-Dark-Blue text-White">
+<body class="font-Overpass bg-Very-Dark-Blue text-White h-screen grid place-content-center">
 
   <!-- Rating state start -->
 
   <main>
-    <div class="gradient-background w-[327px] rounded-2xl p-6">
-      <div class="bg-Dark-Blue w-10 h-10 grid place-content-center rounded-full mb-4">
-        <img src="./assets/images/icon-star.svg" alt="icon star">
+      <div id="select" class="w-[327px] gradient-background rounded-2xl p-6">
+        <div class="bg-Dark-Blue w-10 h-10 grid place-content-center rounded-full mb-4">
+          <img src="./assets/images/icon-star.svg" alt="icon star">
+        </div>
+        <h2 class="text-2xl mb-2">How did we do?</h2>
+        
+        <p class="text-[13.5px] text-Light-Grey mb-6">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+  
+        <div class="flex place-content-between mb-6">
+          <div class="circle">1</div>
+          <div class="circle">2</div>
+          <div class="circle">3</div>
+          <div class="circle">4</div>
+          <div class="circle">5</div>
+        </div>
+        <button id="submit-btn" class="bg-Orange w-full rounded-[22px] h-[45px] uppercase text-[14px] tracking-widest text-Very-Dark-Blue font-bold cursor-pointer hover:bg-white">Submit</button>
       </div>
-      How did we do?
+      <div id="thank-you" class="w-[327px] gradient-background rounded-2xl p-6 hidden">
+        <div class="flex justify-center mb-6">
+          <img class="w-[144px]" src="./assets/images/illustration-thank-you.svg" alt="Thank you illustration">
+        </div>
 
-      Please let us know how we did with your support request. All feedback is appreciated 
-      to help us improve our offering!
+        <div class="flex justify-center mb-6">
+          <p class="bg-Dark-Blue rounded-[22px] inline-block text-Orange text-[14px] px-3 py-2">You selected <span id="selected-number">4</span> out of 5</p>
+        </div>
     
-      1 2 3 4 5
+      <p class="text-center text-2xl mb-[10px]">Thank you!</p>
     
-      Submit
-    </div>
+      <p class="text-[13.5px] text-Light-Grey text-center">We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
+      </div>
   </main>
 
-  
-
-  <!-- Rating state end -->
-
-  <!-- Thank you state start -->
-
-  You selected <!-- Add rating here --> out of 5
-
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
-
-  <!-- Thank you state end -->
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <script src="./main.js"></script>
 </body>
 </html>
