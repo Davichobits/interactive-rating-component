@@ -7,7 +7,7 @@
   <title>Frontend Mentor | Interactive rating component</title>
   <link rel="stylesheet" href="./src/output.css">
 </head>
-<body class="font-Overpass bg-Very-Dark-Blue text-White">
+<body class="font-Overpass bg-Very-Dark-Blue text-White h-screen grid place-content-center">
 
   <!-- Rating state start -->
 
@@ -16,36 +16,28 @@
       <div class="bg-Dark-Blue w-10 h-10 grid place-content-center rounded-full mb-4">
         <img src="./assets/images/icon-star.svg" alt="icon star">
       </div>
-      How did we do?
+      <h2>How did we do?</h2>
+      
+      <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
 
-      Please let us know how we did with your support request. All feedback is appreciated 
-      to help us improve our offering!
-    
-      1 2 3 4 5
-    
-      Submit
+      <div class="flex place-content-between border">
+        <div class="circle">1</div>
+        <div class="circle">2</div>
+        <div class="circle">3</div>
+        <div class="circle">4</div>
+        <div class="circle">5</div>
+      </div>
+      <button>Submit</button>
     </div>
   </main>
 
-  
-
-  <!-- Rating state end -->
-
-  <!-- Thank you state start -->
-
-  You selected <!-- Add rating here --> out of 5
+  <div class="hidden">
+    You selected <!-- Add rating here --> out of 5
 
   Thank you!
 
   We appreciate you taking the time to give a rating. If you ever need more support, 
   don’t hesitate to get in touch!
-
-  <!-- Thank you state end -->
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
   </div>
 </body>
 </html>
