@@ -19,7 +19,7 @@
 
 @layer components {
   .gradient-background {
-    background: radial-gradient(99.00% 99.00% at 50% 0%,rgb(35, 42, 52),rgb(24, 30, 39) 100%);
+    background: radial-gradient(99.00% 99.00% at 50% 0%,hsl(215, 20%, 17%),hsl(216, 24%, 12%) 100%);
   }
   .circle{
     @apply bg-Dark-Blue w-10 h-10 grid place-content-center rounded-full text-Light-Grey text-[14px] hover:bg-Orange cursor-pointer hover:text-Very-Dark-Blue;

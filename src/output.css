@@ -229,8 +229,14 @@
   .w-full {
     width: 100%;
   }
+  .border-collapse {
+    border-collapse: collapse;
+  }
   .cursor-pointer {
     cursor: pointer;
+  }
+  .resize {
+    resize: both;
   }
   .place-content-between {
     place-content: space-between;
@@ -249,6 +255,10 @@
   }
   .rounded-full {
     border-radius: calc(infinity * 1px);
+  }
+  .border {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
   }
   .bg-Dark-Blue {
     background-color: var(--color-Dark-Blue);
@@ -310,6 +320,9 @@
   .uppercase {
     text-transform: uppercase;
   }
+  .underline {
+    text-decoration-line: underline;
+  }
   .outline {
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
@@ -319,6 +332,81 @@
       @media (hover: hover) {
         background-color: var(--color-white);
       }
+    }
+  }
+  .sm\:mb-8 {
+    @media (width >= 40rem) {
+      margin-bottom: calc(var(--spacing) * 8);
+    }
+  }
+  .sm\:mb-\[30px\] {
+    @media (width >= 40rem) {
+      margin-bottom: 30px;
+    }
+  }
+  .sm\:w-\[412px\] {
+    @media (width >= 40rem) {
+      width: 412px;
+    }
+  }
+  .sm\:p-8 {
+    @media (width >= 40rem) {
+      padding: calc(var(--spacing) * 8);
+    }
+  }
+  .sm\:px-3 {
+    @media (width >= 40rem) {
+      padding-inline: calc(var(--spacing) * 3);
+    }
+  }
+  .sm\:px-4 {
+    @media (width >= 40rem) {
+      padding-inline: calc(var(--spacing) * 4);
+    }
+  }
+  .sm\:px-6 {
+    @media (width >= 40rem) {
+      padding-inline: calc(var(--spacing) * 6);
+    }
+  }
+  .sm\:py-3 {
+    @media (width >= 40rem) {
+      padding-block: calc(var(--spacing) * 3);
+    }
+  }
+  .sm\:pr-\[40px\] {
+    @media (width >= 40rem) {
+      padding-right: 40px;
+    }
+  }
+  .sm\:text-\[14\.5px\] {
+    @media (width >= 40rem) {
+      font-size: 14.5px;
+    }
+  }
+  .sm\:text-\[14\.6px\] {
+    @media (width >= 40rem) {
+      font-size: 14.6px;
+    }
+  }
+  .sm\:text-\[14\.7px\] {
+    @media (width >= 40rem) {
+      font-size: 14.7px;
+    }
+  }
+  .sm\:text-\[14px\] {
+    @media (width >= 40rem) {
+      font-size: 14px;
+    }
+  }
+  .sm\:text-\[15px\] {
+    @media (width >= 40rem) {
+      font-size: 15px;
+    }
+  }
+  .sm\:text-\[28px\] {
+    @media (width >= 40rem) {
+      font-size: 28px;
     }
   }
 }
@@ -331,7 +419,7 @@
 }
 @layer components {
   .gradient-background {
-    background: radial-gradient(99.00% 99.00% at 50% 0%,rgb(35, 42, 52),rgb(24, 30, 39) 100%);
+    background: radial-gradient(99.00% 99.00% at 50% 0%,hsl(215, 20%, 17%),hsl(216, 24%, 12%) 100%);
   }
   .circle {
     display: grid;
@@ -354,6 +442,11 @@
       }
     }
   }
+}
+@property --tw-border-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
 }
 @property --tw-font-weight {
   syntax: "*";
