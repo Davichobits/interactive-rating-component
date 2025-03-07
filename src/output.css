@@ -178,12 +178,6 @@
   .static {
     position: static;
   }
-  .m-auto {
-    margin: auto;
-  }
-  .mx-auto {
-    margin-inline: auto;
-  }
   .mb-2 {
     margin-bottom: calc(var(--spacing) * 2);
   }
@@ -208,9 +202,6 @@
   .hidden {
     display: none;
   }
-  .inline {
-    display: inline;
-  }
   .inline-block {
     display: inline-block;
   }
@@ -226,14 +217,8 @@
   .h-screen {
     height: 100vh;
   }
-  .w-1 {
-    width: calc(var(--spacing) * 1);
-  }
   .w-10 {
     width: calc(var(--spacing) * 10);
-  }
-  .w-16 {
-    width: calc(var(--spacing) * 16);
   }
   .w-\[144px\] {
     width: 144px;
@@ -287,26 +272,11 @@
   .bg-Very-Dark-Blue {
     background-color: var(--color-Very-Dark-Blue);
   }
-  .p-1 {
-    padding: calc(var(--spacing) * 1);
-  }
-  .p-2 {
-    padding: calc(var(--spacing) * 2);
-  }
   .p-6 {
     padding: calc(var(--spacing) * 6);
   }
-  .px-1 {
-    padding-inline: calc(var(--spacing) * 1);
-  }
-  .px-2 {
-    padding-inline: calc(var(--spacing) * 2);
-  }
   .px-3 {
     padding-inline: calc(var(--spacing) * 3);
-  }
-  .py-1 {
-    padding-block: calc(var(--spacing) * 1);
   }
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
@@ -364,6 +334,81 @@
       }
     }
   }
+  .sm\:mb-8 {
+    @media (width >= 40rem) {
+      margin-bottom: calc(var(--spacing) * 8);
+    }
+  }
+  .sm\:mb-\[30px\] {
+    @media (width >= 40rem) {
+      margin-bottom: 30px;
+    }
+  }
+  .sm\:w-\[412px\] {
+    @media (width >= 40rem) {
+      width: 412px;
+    }
+  }
+  .sm\:p-8 {
+    @media (width >= 40rem) {
+      padding: calc(var(--spacing) * 8);
+    }
+  }
+  .sm\:px-3 {
+    @media (width >= 40rem) {
+      padding-inline: calc(var(--spacing) * 3);
+    }
+  }
+  .sm\:px-4 {
+    @media (width >= 40rem) {
+      padding-inline: calc(var(--spacing) * 4);
+    }
+  }
+  .sm\:px-6 {
+    @media (width >= 40rem) {
+      padding-inline: calc(var(--spacing) * 6);
+    }
+  }
+  .sm\:py-3 {
+    @media (width >= 40rem) {
+      padding-block: calc(var(--spacing) * 3);
+    }
+  }
+  .sm\:pr-\[40px\] {
+    @media (width >= 40rem) {
+      padding-right: 40px;
+    }
+  }
+  .sm\:text-\[14\.5px\] {
+    @media (width >= 40rem) {
+      font-size: 14.5px;
+    }
+  }
+  .sm\:text-\[14\.6px\] {
+    @media (width >= 40rem) {
+      font-size: 14.6px;
+    }
+  }
+  .sm\:text-\[14\.7px\] {
+    @media (width >= 40rem) {
+      font-size: 14.7px;
+    }
+  }
+  .sm\:text-\[14px\] {
+    @media (width >= 40rem) {
+      font-size: 14px;
+    }
+  }
+  .sm\:text-\[15px\] {
+    @media (width >= 40rem) {
+      font-size: 15px;
+    }
+  }
+  .sm\:text-\[28px\] {
+    @media (width >= 40rem) {
+      font-size: 28px;
+    }
+  }
 }
 @font-face {
   font-family: Overpass;
@@ -374,7 +419,7 @@
 }
 @layer components {
   .gradient-background {
-    background: radial-gradient(99.00% 99.00% at 50% 0%,rgb(35, 42, 52),rgb(24, 30, 39) 100%);
+    background: radial-gradient(99.00% 99.00% at 50% 0%,hsl(215, 20%, 17%),hsl(216, 24%, 12%) 100%);
   }
   .circle {
     display: grid;
